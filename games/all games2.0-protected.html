@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
-    <title>Password Protected Page</title>
+    <title>LEGEND</title>
+	  <link rel="shortcut icon" href="https://github.com/MegaTheLEGEND/html-m.a/blob/main/EmbeddedImage.png?raw=true">
     <style>
         html, body {
             margin: 0;
@@ -111,7 +112,23 @@
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">This page is password protected.</div>
+			
+			
+			<input type="text" placeholder="Type something..." id="myInput">
+    <button type="button" onclick="getInputValue();">change tab title</button>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            document.querySelector('title').textContent
+					= inputVal;
+        }
+    </script>
+			
+			
+                <div id="dialogText">This page is password protected. Only members are allowed.</div>
                 <div id="passArea">
                     <p id="passwordPrompt">Password</p>
                     <input id="pass" type="password" name="pass" autofocus>
@@ -129,7 +146,7 @@
         </div>
     </div>
     <div id="attribution">
-        Protected by <a href="https://www.maxlaumeister.com/pagecrypt/">PageCrypt</a>
+        Mega_TheLEGEND
     </div>
     <script>
 /*
@@ -264,7 +281,7 @@ a[0]++}h.sigBytes=4*c;return h}});g.PBKDF2=function(d,b,e){return n.create(e).co
         }( this, this.document ));
     </script>
     <script>
-        var pl = {"salt":"bpMscWe4X5dCs4neDzFjf8AoxRFzczsaJ8FBBDpQD4Y=","iv":"mDwbwpeQ1KAg5++N+EPGAQ==","data":"mTZxCdotky76I+Wufzix906F3HoiveRf6U+ctv7MyJ1SZS0wk+1s1e9vlIAEpqTsR5MFmTjz6vvohi9lRWYRqI/jX/e3l/YSlDt55ph8xxoRTJVIrG3ihVrlmNpMk46nkmYJi1jNGJ5nK6m46SODZVHSuO9yWm0NbQ+6qpc/JTpecOS8uz9nw+hx7mv1Q2inGhophMQtDD8rtqGKTbgOKwneQdw5zND9i3kkaREO7Kn4eLMuSZejKswagKuFdGO1PuMVe2Y8oecZHuf5JTt0X9N4PDskv3lO04pg6pQuEIY="};
+        var pl = {"salt":"IAGNMSgqZUWc9n1bEhw5PSPEHbSvge9Sc+pRxusOIjE=","iv":"a3ZCQifhYBvap4kjwNoBlQ==","data":"5TdzHgQ8k1OstYiVcLp+jWA/ybxmhdKcgjCYzDEsqPVwN1UU34o8MF+EMy9cjqK2vEG0tH1ju9cVqiV0hlZ4SPUux6xZMG/lUnq7Hzq2y/nGa98CH8OXftSPMn52sSMGKM7i1vzh7ZvE3MJeUPhQ4UrBWyMI2B2+zYdJmkneNWJ50BDGne7KyjhIauIHKHhQNak5NeSoMcRlPw/unMYD4BrvAI3EQobGnI+I2cogif13iUuWYj6a31peAuZe5D23XWjQpa5JCSfWriRg49iizDQQEVGnX7g4EhzzNXNVpL6j+tkG6WHr56AzbP5CrmmhoMa1HUd2LbFocxOYR3glmw=="};
         
         var submitPass = document.getElementById('submitPass');
         var passEl = document.getElementById('pass');
